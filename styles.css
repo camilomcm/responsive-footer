@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    /* background-color: black; */
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Prata', serif;
+    /* background-color: red; */
+    padding-top: 2em;
+}
+
+header p {
+    margin-top: 0.5em;
+    padding-bottom: 3em;
+    font-family: 'Jost', sans-serif;
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+section.links {
+    font-family: 'Jost', sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    /* border: 1px solid black; */
+    margin-bottom: 1px;
+    display: flex;  
+    padding: 3em;
+    justify-content: space-between;
+}
+
+section.links div {
+    /* border: 1px solid black; */
+    padding: 10px;
+}
+
+section div p {
+    /* border: 1px solid white; */
+    margin: 0.5em 0.5em 0.75em;
+    padding: 0 0.5em;
+}
+
+#company {
+    padding: 20px;
+}
+
+#company p {
+    /* background-color: blue; */
+    margin: 0 0 5px 0;
+    padding: 0 0 0;
+}
+
+#name {
+    font-size: 2em;
+    font-family: 'Prata', serif;
+}
+
+.divider {
+    width: 90%;
+    border: 1px solid white;
+    background-color: black;
+    margin: -30px auto 30px;
+}
+
+section.media {
+    /* border: 1px solid white; */
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+    padding-bottom: 20px;
+}
+
+section.media div {
+    /* border: 1px solid black; */
+    display: inline-block;
+    padding: 10px;
+    margin: 30px 0 0;
+}
+
+section.media p {
+    margin: 0 0 80px;
+}
+
+@media (max-width: 1156px) {
+    section.links {
+        /* border: 1px solid white; */
+        margin-top: -30px;
+    }
+    
+    section.links div {
+        padding: 7px;
+    }  
+
+    /* Tamaño letra nombre compañía */
+    #name {
+        font-size: 1.5em;
+    }
+
+    /* Tamaño letra */
+    section div p {
+        font-size: 0.8em;
+    }
+
+    section.media div img {
+        width: 90px;
+    }
+    section.media p {
+        font-size: 0.9em;
+    }
+
+    section.media div {
+        /* margin-top: -0px; */
+    }
+
+}
+
+@media (max-width: 920px) {
+    section.links {
+        margin-top: -50px;
+    }
+
+    /* Tamaño letra nombre compañía */
+    #name {
+        font-size: 1.2em;
+    }
+
+    /* Tamaño letra */
+    section div p {
+        font-size: 0.6em;
+    }
+
+    
+    section.media div {
+        margin-top: -5px;
+    }
+
+    /* Logos redes */
+    section.media div img {
+        width: 70px;
+    }
+
+    section.media p {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 755px) {
+    section.links div[id="company"] {
+        /* background-color: yellow; */
+        /* border: 1px solid white; */
+        margin-top: -30px;
+        width: 100%;
+        text-align: center;
+    }
+
+    section.links {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        /* border: 1px solid white; */
+    }
+
+    section.links div:not(#company) {
+       /* background-color: blue; */
+        width: 100px;
+        padding: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 520px) {
+      section.links {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        /* border: 1px solid white; */
+    }
+
+    section.links div:not(#company) {
+        /* background-color: blue; */
+        border-bottom: 1px solid white;
+        width: 50%;
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 370px) {
+    section.links div:not(#company) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        /* background-color: blue; */
+    }
+}
