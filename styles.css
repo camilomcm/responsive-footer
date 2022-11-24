@@ -107,10 +107,6 @@ footer {
 }
 
 @media (max-width: 892px) {
-    header {
-        border: 1px solid white;
-    }
-
     h1 {
         padding: 7vh 0 1vh;
         /* background-color: red; */
@@ -122,8 +118,12 @@ footer {
     }
 
     .links {
-        border: 1px solid white;
         padding: 4vh;
+        /* background-color: pink; */
+    }
+
+    .links div {
+        padding: 6px;
     }
 
     /* Tamaño letra nombre compañía */
@@ -133,35 +133,103 @@ footer {
 
     /* Tamaño letra */
     .links div p {
-        font-size: 0.7em;
+        font-size: 0.9rem;
     }
 
-    .media {
-        border: 1px solid white;
+    .links div p:last-of-type {
+        margin-bottom: 4vh;
+    }
+
+    .divider {
+        margin: 1.5vh auto;
+    }
+
+    #container div img {
+        width: 90px;
+        margin: 0 5px;
+    }
+
+    #container p {
+        font-size: 1rem;
     }
 }
 
-@media (max-width: 755px) {
-    section.links div[id="company"] {
-        /* background-color: yellow; */
+@media (max-width: 760px) {
+    h1 {
+        padding: 7.5vh 0 1vh;
+        /* background-color: red; */
+    }
+    
+    header p {
+        padding-bottom: 7.5vh;
+        /* background-color: green; */
+    }
+
+    .links {
+        padding: 3.7vh;
+        /* background-color: pink; */
+    }
+
+    .links div {
+        padding: 6px;
+    }
+
+    /* Tamaño letra nombre compañía */
+    #name {
+        font-size: 1.4rem;
+    }
+
+    /* Tamaño letra */
+    .links div p {
+        font-size: 0.8rem;
+        margin-bottom: 2vh;
+    }
+
+    .links div p:last-of-type {
+        margin-bottom: 4vh;
+    }
+
+    .divider {
+        margin: 1.5vh auto;
+    }
+
+    #container div img {
+        width: 80px;
+        margin: 0 5px;
+    }
+
+    #container p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 706px) {
+    .links {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: stretch;
         /* border: 1px solid white; */
-        margin-top: -30px;
+        background-color: red;
+    }
+
+    .links div[id="company"] {
+        background-color: yellow;
+        /* border: 1px solid white; */
+        margin-bottom: 30px;
         width: 100%;
         text-align: center;
     }
 
-    section.links {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: stretch;
-        /* border: 1px solid white; */
-    }
-
-    section.links div:not(#company) {
+    .links div:not(#company) {
        /* background-color: blue; */
-        width: 100px;
+        width: 25%;
         padding: 0;
         text-align: center;
+    }
+
+    .links div p {
+        font-size: 1rem;
     }
 }
 
