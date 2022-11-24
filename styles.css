@@ -35,21 +35,15 @@ footer {
     font-family: 'Jost', sans-serif;
     font-size: 1.2rem;
     font-weight: bold;
-
-    /* background-color: pink; */
 }
 
 .links div {
     padding: 10px;
-
-    /* background-color: green; */
 }
 
 .links div p {
     margin: 0.5em 0.5em 0.75em;
     padding: 0 0.5em;
-
-    /* background-color: red; */
 }
 
 #company {
@@ -57,13 +51,12 @@ footer {
 }
 
 #company p {
-    /* background-color: blue; */
     margin: 0 0 5px 0;
     padding: 0 0 0;
 }
 
 #name {
-    font-size: 2em;
+    font-size: 2rem;
     font-family: 'Prata', serif;
 }
 
@@ -78,97 +71,73 @@ footer {
     text-align: center;
     font-family: 'Jost', sans-serif;
     padding: 9vh 0;
-
-    /* background-color: yellow; */
 }
 
 #container {
     display: inline-block;
-    
-    /* background-color: red; */
 }
 
 #container p {
     font-size: 1.2rem;
     margin-top: 2vh;
-}
+} 
 
-/* section.media div {
-    display: inline-block;
-    padding: 10px;
-    margin: 30px 0 0;
-} */
-
-
-@media (max-width: 1156px) {
+@media (max-width: 1026px) {
     .links {
-        border: 1px solid white;
-        margin-top: -30px;
+        padding: 6vh;
     }
-    
-    .links div {
-        padding: 7px;
-    }  
 
     /* Tamaño letra nombre compañía */
     #name {
-        font-size: 1.5em;
+        font-size: 1.8rem;
     }
 
     /* Tamaño letra links */
-    section div p {
-        font-size: 0.8em;
+    .links div p {
+        font-size: 1rem;
+    }
+
+    .divider {
+        margin: 1vh auto;
     }
 
     .media {
-        background-color: blue;
-        margin-top: 10vh;
-        padding: 4vh 0;
+        padding: 9vh 0;
     }
+}
 
-    .media div {
-        border: 1px solid green;
-        margin-top: 200px;
-    }
-
-    .media div img {
-        width: 90px;
-    }
-
-    .media p {
-        font-size: 0.9em;
+@media (max-width: 892px) {
+    header {
         border: 1px solid white;
     }
 
-}
+    h1 {
+        padding: 7vh 0 1vh;
+        /* background-color: red; */
+    }
+    
+    header p {
+        padding-bottom: 7vh;
+        /* background-color: green; */
+    }
 
-@media (max-width: 920px) {
-    section.links {
-        margin-top: -50px;
+    .links {
+        border: 1px solid white;
+        padding: 4vh;
     }
 
     /* Tamaño letra nombre compañía */
     #name {
-        font-size: 1.2em;
+        font-size: 1.6rem;
     }
 
     /* Tamaño letra */
-    section div p {
-        font-size: 0.6em;
+    .links div p {
+        font-size: 0.7em;
     }
 
-    
-    section.media div {
-        margin-top: -5px;
-    }
-
-    /* Logos redes */
-    section.media div img {
-        width: 70px;
-    }
-
-    section.media p {
-        font-size: 0.8em;
+    .media {
+        border: 1px solid white;
     }
 }
 
