@@ -1,25 +1,26 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    /* background-color: black; */
+    background-color: black;
 }
 
 header {
-    background-color: black;
     color: white;
     text-align: center;
 }
 
 h1 {
     font-family: 'Prata', serif;
-    background-color: red;
-    padding: 5vh 0;
+    padding: 5vh 0 1vh;
+
+    /* background-color: red; */
 }
 
 header p {
-    margin-top: 0.5em;
-    padding-bottom: 3em;
+    padding-bottom: 5vh;
     font-family: 'Jost', sans-serif;
+
+    /* background-color: green; */
 }
 
 footer {
@@ -27,26 +28,28 @@ footer {
     color: white;
 }
 
-section.links {
-    font-family: 'Jost', sans-serif;
-    font-size: 1.2em;
-    font-weight: bold;
-    /* border: 1px solid black; */
-    margin-bottom: 1px;
+.links {
+    padding: 6vh;
     display: flex;  
-    padding: 3em;
     justify-content: space-between;
+    font-family: 'Jost', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    /* background-color: pink; */
 }
 
-section.links div {
-    /* border: 1px solid black; */
+.links div {
     padding: 10px;
+
+    /* background-color: green; */
 }
 
-section div p {
-    /* border: 1px solid white; */
+.links div p {
     margin: 0.5em 0.5em 0.75em;
     padding: 0 0.5em;
+
+    /* background-color: red; */
 }
 
 #company {
@@ -67,27 +70,35 @@ section div p {
 .divider {
     width: 90%;
     border: 1px solid white;
-    background-color: black;
-    margin: -30px auto 30px;
+    background-color: white;
+    margin: 1vh auto;
 }
 
-section.media {
-    /* border: 1px solid white; */
+.media {
     text-align: center;
     font-family: 'Jost', sans-serif;
-    padding-bottom: 20px;
+    padding: 9vh 0;
+
+    /* background-color: yellow; */
 }
 
-section.media div {
-    /* border: 1px solid black; */
+#container {
+    display: inline-block;
+    
+    /* background-color: red; */
+}
+
+#container p {
+    font-size: 1.2rem;
+    margin-top: 2vh;
+}
+
+/* section.media div {
     display: inline-block;
     padding: 10px;
     margin: 30px 0 0;
-}
+} */
 
-section.media p {
-    margin: 0 0 80px;
-}
 
 @media (max-width: 1156px) {
     .links {
