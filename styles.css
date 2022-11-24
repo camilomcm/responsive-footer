@@ -209,16 +209,14 @@ footer {
         justify-content: space-around;
         flex-wrap: wrap;
         align-items: stretch;
-        /* border: 1px solid white; */
-        background-color: red;
+        /* background-color: red; */
     }
 
     .links div[id="company"] {
-        background-color: yellow;
-        /* border: 1px solid white; */
         margin-bottom: 30px;
         width: 100%;
         text-align: center;
+        /* background-color: yellow; */
     }
 
     .links div:not(#company) {
@@ -233,6 +231,7 @@ footer {
     }
 }
 
+/* Siguiente 630px */
 @media (max-width: 520px) {
       section.links {
         display: flex;
