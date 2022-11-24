@@ -12,8 +12,8 @@ header {
 
 h1 {
     font-family: 'Prata', serif;
-    /* background-color: red; */
-    padding-top: 2em;
+    background-color: red;
+    padding: 5vh 0;
 }
 
 header p {
@@ -90,12 +90,12 @@ section.media p {
 }
 
 @media (max-width: 1156px) {
-    section.links {
-        /* border: 1px solid white; */
+    .links {
+        border: 1px solid white;
         margin-top: -30px;
     }
     
-    section.links div {
+    .links div {
         padding: 7px;
     }  
 
@@ -104,20 +104,29 @@ section.media p {
         font-size: 1.5em;
     }
 
-    /* Tamaño letra */
+    /* Tamaño letra links */
     section div p {
         font-size: 0.8em;
     }
 
-    section.media div img {
-        width: 90px;
-    }
-    section.media p {
-        font-size: 0.9em;
+    .media {
+        background-color: blue;
+        margin-top: 10vh;
+        padding: 4vh 0;
     }
 
-    section.media div {
-        /* margin-top: -0px; */
+    .media div {
+        border: 1px solid green;
+        margin-top: 200px;
+    }
+
+    .media div img {
+        width: 90px;
+    }
+
+    .media p {
+        font-size: 0.9em;
+        border: 1px solid white;
     }
 
 }
