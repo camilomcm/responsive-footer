@@ -213,7 +213,7 @@ footer {
     }
 
     .links div[id="company"] {
-        margin-bottom: 30px;
+        margin-bottom: 10px;
         width: 100%;
         text-align: center;
         /* background-color: yellow; */
@@ -224,37 +224,51 @@ footer {
         width: 25%;
         padding: 0;
         text-align: center;
+        margin-bottom: 10px;
     }
 
-    .links div p {
+    .links div p, #container p {
         font-size: 1rem;
     }
+
 }
 
-/* Siguiente 630px */
-@media (max-width: 520px) {
-      section.links {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: stretch;
-        /* border: 1px solid white; */
-    }
-
-    section.links div:not(#company) {
-        /* background-color: blue; */
+@media (max-width: 630px) {
+    .links div:not(#company) {
         border-bottom: 1px solid white;
-        width: 50%;
+        width: 40%;
         padding: 10px;
         text-align: center;
+        /* background-color: blue; */
     }
 }
 
-@media (max-width: 370px) {
-    section.links div:not(#company) {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+@media (max-width: 470px) {
+    #container div img {
+        width: 70px;
+        margin: 0 5px;
+    }
+
+    .media {
+        padding: 6vh 0;
+    }
+
+    #name {
+        font-size: 1.2rem;
+    }
+
+    .links div p, #container p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 435px) {
+    .links div:not(#company) {
         width: 100%;
-        /* background-color: blue; */
+    }   
+
+    #container div img {
+        width: 60px;
+        margin: 0 3px;
     }
 }
